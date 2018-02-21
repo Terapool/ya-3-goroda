@@ -1,7 +1,16 @@
+/* CSS Reset */
+
+
 * {
     margin: 0;
     padding: 0;
 }
+
+a {
+    text-decoration: none;
+}
+
+/* Fonts */
 
 @font-face {
     font-family: 'TrixieCyr';
@@ -21,6 +30,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Fixedsys Excelsior 3.01';
+    src: url('../fonts/FixedsysExcelsior.woff2') format('woff2'),
+        url('../fonts/FixedsysExcelsior.woff') format('woff'),
+        url('../fonts/FixedsysExcelsior.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Page structure */
+
 html,
 body {
   height: 100%;
@@ -31,18 +51,33 @@ body {
   height: 100%;
 }
 .content {
-  flex: 1 0 auto;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 .footer {
     flex: 0 0 auto;
     text-align: right;
 }
 
-body.body-intro {
+
+/* Bg variations */
+
+body.body-intro { 
     background: #636363 url(../img/bg-city-01.jpg) no-repeat center center fixed;
     background-size: cover;
   
 }
+
+body.body-game {
+    background: #636363 url(../img/bg-city-02.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+
+/* Header for index.html */
+
 
 .header {
     width: 100%;
@@ -54,8 +89,9 @@ body.body-intro {
 .header__line {
     border: 0;
     border-top: 2px solid #000;
+}
+.header__line_mt {
     margin-top: 40px;
-    
 }
 .header__title {
     color: #003366;
@@ -77,6 +113,79 @@ body.body-intro {
     
 }
 
+/* Game page */
+
+/*  Game page - Header */
+
+
+.header2 {
+    width:100%;
+    margin-top: 30px;
+    background: rgba(255,255,255,0.75);
+    height: 60px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.header2-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Fixedsys Excelsior 3.01';
+    height: 60px;
+}
+
+.header2-container-item {
+    text-align: center;
+    flex: 1;
+    font-size: 30px;
+}
+
+.header2-container-item-value {
+    color: #003366;
+    
+}
+
+/*  Game page - Informer */
+
+.informer {    
+    width: inherit;
+    background: rgba(0,0,0,0.75);
+    flex: auto;
+    margin: 50px;
+    border-radius: 20px;
+    border: 2px solid #FFF; 
+}
+
+
+/*  Game page - Footer, Input */
+
+.footer2 {
+    display: flex;
+    align-items: baseline;
+    border: none;
+    
+}
+.footer2-input {
+    height: 55px;
+    width: 100%;
+    flex: 1;
+    margin: 5px 50px auto;
+    border: 2px solid #000;
+    border-radius: 15px;
+    font-family: 'TrixieCyr';
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 40px;
+    text-indent: 30px;
+    background: #EEE;
+    
+    
+}
+
+
+/* Button */
+
 .button {
     display: inline-block;
     line-height: 55px;
@@ -93,16 +202,13 @@ body.body-intro {
 }
 
 .button:hover {
-    color: #FFFF00;
-    border: 1px solid #FFFF00;
-    
-    
-    
+    color: #73DCFF;
+    border: 1px solid #73DCFF;
 }
 .button_cap {
     text-transform: uppercase;
 }
 .button_right {
-    margin: 0 50px 50px 0;
+    margin: 5px 50px 50px 0;
     
 }
