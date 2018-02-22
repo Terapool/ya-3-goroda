@@ -155,7 +155,42 @@ body.body-game {
     margin: 50px;
     border-radius: 20px;
     border: 2px solid #FFF; 
+    padding: 30px;
+    overflow-y: auto;
 }
+.informer__msg {
+    font-family: 'TrixieCyr';
+    font-size: 30px;
+    
+}
+
+.informer__msg_comp {
+    text-align: right;
+    
+}
+
+.informer__msg_admin {
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;    
+    font-size: 22px;
+}
+
+.informer__msg_info {
+    color: #73DCFF;
+    font-weight: normal;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 22px;
+    
+}
+
+.informer__msg_data {
+    font-style: normal;
+    color: #FFF;
+    font-weight: normal;
+    
+}
+
+
 
 
 /*  Game page - Footer, Input */

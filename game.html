@@ -4,6 +4,8 @@
       <meta charset="UTF-8">
       <title>Города. Автор Сергей Дмитриев</title>
       <link rel="stylesheet" href="css/main.css">
+      <script src="js/database/cities.json"></script>
+      <script src="js/main.js"></script>
 </head>
 <body class="body-game">
  <div class="wrapper">
@@ -12,19 +14,19 @@
                 
             <div class="header2-container">
                 <div class="header2-container-item">
-                    <span class="header2-container-item-parameter">Player1:</span> <span class="header2-container-item-value">300 000k</span>
+                    <span class="header2-container-item-parameter" id="player-name">Игрок1:</span> <span class="header2-container-item-value" id="player-score">0</span>
                 </div>
                 <div class="header2-container-item">
-                    <span class="header2-container-item-parameter">Step:</span> <span class="header2-container-item-value">82/96</span>
+                    <span class="header2-container-item-parameter">Шаг:</span> <span class="header2-container-item-value" id ="steps">0/0</span>
                 </div>
                 <div class="header2-container-item">
-                    <span class="header2-container-item-parameter">Player2:</span> <span class="header2-container-item-value">300 000k</span>
+                    <span class="header2-container-item-parameter" id="comp-name">Игрок2:</span> <span class="header2-container-item-value"  id="comp-score">0</span>
                 </div>
             </div>
         </header>
     
-    <div class="informer">
-        
+    <div class="informer" id="informer">
+
       
     </div>
     
@@ -32,8 +34,8 @@
     
     </div>
     <footer class="footer footer2">
-       <input class="footer2-input" type="text">
-        <a class="button button_cap button_right"> Сообщить &crarr;</a>
+       <input class="footer2-input" type="text" id="input">
+        <a class="button button_cap button_right" id="button-commit"> Сообщить &crarr;</a>
         
     </footer>
      
